@@ -115,6 +115,9 @@ class _NutrientScannerState extends State<NutrientScanner> with AutomaticKeepAli
     }
   }
 
+
+
+
   Future<void> _processImage(File file) async {
     if (classifier == null || yolo == null) {
       _showError("Model Error", "Models not loaded correctly.");
